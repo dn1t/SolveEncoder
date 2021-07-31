@@ -66,6 +66,10 @@
         }
       }
 
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+
       &.text li {
         width: 15rem;
 

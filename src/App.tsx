@@ -55,7 +55,7 @@ const App = () => {
             </label>
           </li>
         </ul>
-        <ul className={'text'}>
+        <ul className={mode === 'encode' ? 'text' : 'text reverse'}>
           <li>
             <label>
               <span>텍스트</span>
@@ -64,6 +64,7 @@ const App = () => {
                 placeholder={'솔바브보'}
                 value={text}
                 onChange={(e) => setText(e.target.value)}
+                disabled={mode === 'decode'}
               />
             </label>
           </li>
@@ -75,6 +76,7 @@ const App = () => {
                 placeholder={'바보바보...바보솔브솔브'}
                 value={solve}
                 onChange={(e) => setSolve(e.target.value)}
+                disabled={mode === 'encode'}
               />
             </label>
           </li>
