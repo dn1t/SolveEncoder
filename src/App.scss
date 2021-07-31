@@ -78,20 +78,27 @@
         }
       }
     }
-
-    button.convert {
-      background-color: #31c48d;
-      color: #202124;
-      font-weight: 600;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-        Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-        Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 1rem;
+    .buttons {
+      display: flex;
       padding: 0.5rem 0.7rem;
-      border-radius: 0.3rem;
-      border: 0;
-      margin: 0.5rem 0.7rem 0.5rem auto;
+
+      button {
+        background-color: #31c48d;
+        color: #202124;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+          Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+          "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        border: 0;
+
+        &.copy {
+          margin: 0 0.3rem 0 auto;
+        }
+      }
     }
   }
 }

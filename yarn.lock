@@ -2081,6 +2081,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"copy-to-clipboard@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "copy-to-clipboard@npm:3.3.1"
+  dependencies:
+    toggle-selection: ^1.0.6
+  checksum: 3c7b1c333dc6a4b2e9905f52e4df6bbd34ff9f9c97ecd3ca55378a6bc1c191bb12a3252e6289c7b436e9188cff0360d393c0161626851d2301607860bbbdcfd5
+  languageName: node
+  linkType: hard
+
 "core-js@npm:^3.2.1":
   version: 3.16.0
   resolution: "core-js@npm:3.16.0"
@@ -3232,6 +3241,15 @@ fsevents@~2.3.2:
     merge2: ^1.3.0
     slash: ^3.0.0
   checksum: d3e02d5e459e02ffa578b45f040381c33e3c0538ed99b958f0809230c423337999867d7b0dbf752ce93c46157d3bbf154d3fff988a93ccaeb627df8e1841775b
+  languageName: node
+  linkType: hard
+
+"goober@npm:^2.0.35":
+  version: 2.0.39
+  resolution: "goober@npm:2.0.39"
+  peerDependencies:
+    csstype: ^2.6.2
+  checksum: 555bbccfc507f5a9befba2a04d107f871b9cd304c4e71a68daec4694bfd1961dbc3bf548c3727ed2064491e9c312c55fb9c39fb4e86072d23a2dcdc9443af0a2
   languageName: node
   linkType: hard
 
@@ -5888,6 +5906,18 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"react-hot-toast@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "react-hot-toast@npm:2.1.0"
+  dependencies:
+    goober: ^2.0.35
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 6ac220bb96e84fb4e5425984b22b0b736ce20ed3b0895dea4efdd593d71f5a9a34f94a19c61a7c1236c1d09748d6d5a566f03aadba3bc4b1998e8b8d8e678131
+  languageName: node
+  linkType: hard
+
 "react-refresh@npm:^0.9.0":
   version: 0.9.0
   resolution: "react-refresh@npm:0.9.0"
@@ -6386,9 +6416,11 @@ fsevents@~2.3.2:
     "@types/react": ^17
     "@types/react-dom": ^17
     "@types/sass": ^1
+    copy-to-clipboard: ^3.3.1
     parcel: ^2.0.0-beta.2
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-hot-toast: ^2.1.0
     sass: ^1.37.0
     typescript: ^4.3.5
   languageName: unknown
@@ -6827,6 +6859,13 @@ fsevents@~2.3.2:
     regex-not: ^1.0.2
     safe-regex: ^1.1.0
   checksum: 4ed4a619059b64e204aad84e4e5f3ea82d97410988bcece7cf6cbfdbf193d11bff48cf53842d88b8bb00b1bfc0d048f61f20f0709e6f393fd8fe0122662d9db4
+  languageName: node
+  linkType: hard
+
+"toggle-selection@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "toggle-selection@npm:1.0.6"
+  checksum: a90dc80ed1e7b18db8f4e16e86a5574f87632dc729cfc07d9ea3ced50021ad42bb4e08f22c0913e0b98e3837b0b717e0a51613c65f30418e21eb99da6556a74c
   languageName: node
   linkType: hard
 

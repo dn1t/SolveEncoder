@@ -39,9 +39,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.15"],
             ["@types/react-dom", "npm:17.0.9"],
             ["@types/sass", "npm:1.16.1"],
+            ["copy-to-clipboard", "npm:3.3.1"],
             ["parcel", "npm:2.0.0-nightly.790"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:17.0.2"],
+            ["react-hot-toast", "virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:2.1.0"],
             ["sass", "npm:1.37.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
           ],
@@ -2534,6 +2536,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["copy-to-clipboard", [
+        ["npm:3.3.1", {
+          "packageLocation": "./.yarn/cache/copy-to-clipboard-npm-3.3.1-18029bce99-3c7b1c333d.zip/node_modules/copy-to-clipboard/",
+          "packageDependencies": [
+            ["copy-to-clipboard", "npm:3.3.1"],
+            ["toggle-selection", "npm:1.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["core-js", [
         ["npm:3.16.0", {
           "packageLocation": "./.yarn/unplugged/core-js-npm-3.16.0-81e18c66e6/node_modules/core-js/",
@@ -3891,6 +3903,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ignore", "npm:5.1.8"],
             ["merge2", "npm:1.4.1"],
             ["slash", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["goober", [
+        ["npm:2.0.39", {
+          "packageLocation": "./.yarn/cache/goober-npm-2.0.39-ebc979b8e2-555bbccfc5.zip/node_modules/goober/",
+          "packageDependencies": [
+            ["goober", "npm:2.0.39"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:20650bbacc5c26876b1f7a013800bde553792eb811d390cc0c51a09e35359c9bb854227e8073f2c5f42afb5d00cf4bc436fde173bbca0b7eab0b8ba577b92c31#npm:2.0.39", {
+          "packageLocation": "./.yarn/__virtual__/goober-virtual-a54eeef49d/0/cache/goober-npm-2.0.39-ebc979b8e2-555bbccfc5.zip/node_modules/goober/",
+          "packageDependencies": [
+            ["goober", "virtual:20650bbacc5c26876b1f7a013800bde553792eb811d390cc0c51a09e35359c9bb854227e8073f2c5f42afb5d00cf4bc436fde173bbca0b7eab0b8ba577b92c31#npm:2.0.39"],
+            ["@types/csstype", null],
+            ["csstype", null]
+          ],
+          "packagePeers": [
+            "@types/csstype",
+            "csstype"
           ],
           "linkType": "HARD",
         }]
@@ -7179,6 +7213,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["react-hot-toast", [
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/react-hot-toast-npm-2.1.0-08d3e91e36-6ac220bb96.zip/node_modules/react-hot-toast/",
+          "packageDependencies": [
+            ["react-hot-toast", "npm:2.1.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:2.1.0", {
+          "packageLocation": "./.yarn/__virtual__/react-hot-toast-virtual-20650bbacc/0/cache/react-hot-toast-npm-2.1.0-08d3e91e36-6ac220bb96.zip/node_modules/react-hot-toast/",
+          "packageDependencies": [
+            ["react-hot-toast", "virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:2.1.0"],
+            ["@types/react", "npm:17.0.15"],
+            ["@types/react-dom", "npm:17.0.9"],
+            ["goober", "virtual:20650bbacc5c26876b1f7a013800bde553792eb811d390cc0c51a09e35359c9bb854227e8073f2c5f42afb5d00cf4bc436fde173bbca0b7eab0b8ba577b92c31#npm:2.0.39"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["react-refresh", [
         ["npm:0.9.0", {
           "packageLocation": "./.yarn/cache/react-refresh-npm-0.9.0-02c61ee045-6440146176.zip/node_modules/react-refresh/",
@@ -7743,9 +7804,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.15"],
             ["@types/react-dom", "npm:17.0.9"],
             ["@types/sass", "npm:1.16.1"],
+            ["copy-to-clipboard", "npm:3.3.1"],
             ["parcel", "npm:2.0.0-nightly.790"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:17.0.2"],
+            ["react-hot-toast", "virtual:e8f42acf64e86a51c9171bdfdcd21aa822ac1f19e9a0d5558bf856f85feffc4c8adace36872af2877a4e61e94ae0f588a7c06bff3d8a6d00c40550f78a923657#npm:2.1.0"],
             ["sass", "npm:1.37.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
           ],
@@ -8224,6 +8287,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["to-regex-range", "npm:5.0.1"],
             ["is-number", "npm:7.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["toggle-selection", [
+        ["npm:1.0.6", {
+          "packageLocation": "./.yarn/cache/toggle-selection-npm-1.0.6-c506b73005-a90dc80ed1.zip/node_modules/toggle-selection/",
+          "packageDependencies": [
+            ["toggle-selection", "npm:1.0.6"]
           ],
           "linkType": "HARD",
         }]

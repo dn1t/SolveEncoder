@@ -1,4 +1,6 @@
+import copy from 'copy-to-clipboard';
 import React, { useEffect, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import './App.scss';
 import { decode, encode } from './encoder';
 
@@ -16,6 +18,7 @@ const App = () => {
 
   return (
     <div className={'app'}>
+      <Toaster position={'bottom-center'} />
       <h1>SolveEncoder</h1>
       <form>
         <ul className={'defaults'}>
@@ -81,16 +84,45 @@ const App = () => {
             </label>
           </li>
         </ul>
-        <button
-          className={'convert'}
-          onClick={(e) => {
-            e.preventDefault();
-            if (mode === 'encode') setSolve(encode(text, zero, one));
-            else setText(decode(solve, zero, one));
-          }}
-        >
-          {mode === 'encode' ? '인코딩' : '디코딩'}
-        </button>
+        <div className={'buttons'}>
+          <button
+            className={'copy'}
+            onClick={(e) => {
+              e.preventDefault();
+              if ((mode === 'encode' ? solve : text).trim() === '')
+                return toast.error(
+                  `아직 ${
+                    mode === 'encode' ? '인코딩' : '디코딩'
+                  }되지 않았습니다!`,
+                  {
+                    style: {
+                      background: '#333',
+                      color: '#fff',
+                    },
+                  }
+                );
+              copy(mode === 'encode' ? solve : text);
+              toast.success('결과를 클립보드에 복사했습니다!', {
+                style: {
+                  background: '#333',
+                  color: '#fff',
+                },
+              });
+            }}
+          >
+            복사
+          </button>
+          <button
+            className={'convert'}
+            onClick={(e) => {
+              e.preventDefault();
+              if (mode === 'encode') setSolve(encode(text, zero, one));
+              else setText(decode(solve, zero, one));
+            }}
+          >
+            {mode === 'encode' ? '인코딩' : '디코딩'}
+          </button>
+        </div>
       </form>
     </div>
   );

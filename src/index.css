@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", sans-serif;
   color: white;
   box-sizing: border-box;
 }
@@ -17,4 +17,8 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+div[aria-live] {
+  font-family: sans-serif !important;
 }
