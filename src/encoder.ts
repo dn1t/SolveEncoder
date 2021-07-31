@@ -1,16 +1,13 @@
-const _zero = '솔브',
-  _one = '바보';
-
-export const encode = (text: string) =>
+export const encode = (text: string, zero: string, one: string) =>
   Array.from(new TextEncoder().encode(text))
     .flatMap((b) => b.toString(2).padStart(8, '0').split(''))
-    .map((b) => (Number(b) === 0 ? _zero : _one))
+    .map((b) => (Number(b) === 0 ? zero : one))
     .join('');
 
-export const decode = (solve: string) => {
+export const decode = (solve: string, zero: string, one: string) => {
   const bitArray = solve
-    .replaceAll(_zero, '0')
-    .replaceAll(_one, '1')
+    .replaceAll(zero, '0')
+    .replaceAll(one, '1')
     .split('')
     .map(Number);
   const byteArray = (() => {

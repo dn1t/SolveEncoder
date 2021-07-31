@@ -83,8 +83,8 @@ const App = () => {
           className={'convert'}
           onClick={(e) => {
             e.preventDefault();
-            if (mode === 'encode') setSolve(encode(text));
-            else setText(decode(solve));
+            if (mode === 'encode') setSolve(encode(text, zero, one));
+            else setText(decode(solve, zero, one));
           }}
         >
           {mode === 'encode' ? '인코딩' : '디코딩'}
