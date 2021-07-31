@@ -86,6 +86,7 @@ const App = () => {
         </ul>
         <div className={'buttons'}>
           <button
+            role={'button'}
             className={'copy'}
             onClick={(e) => {
               e.preventDefault();
@@ -113,6 +114,7 @@ const App = () => {
             복사
           </button>
           <button
+            role={'button'}
             className={'convert'}
             onClick={(e) => {
               e.preventDefault();
