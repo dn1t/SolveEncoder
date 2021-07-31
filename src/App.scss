@@ -1,0 +1,105 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: max-content;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0.3rem 0 0 0.1rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 48rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1d;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      li {
+        width: 10rem;
+
+        label {
+          span {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff80;
+            font-size: 0.875rem;
+            padding: 1rem;
+          }
+
+          input,
+          textarea,
+          select {
+            border: 0;
+            font-size: 1rem;
+            padding: 1rem;
+            background-color: #00000033;
+            resize: none;
+            width: 100%;
+            appearance: none;
+
+            &:focus {
+              outline: none;
+              box-shadow: inset 0 0 0 2px #ffffff80;
+            }
+
+            &::selection {
+              background-color: #31c48d;
+              color: #202124;
+            }
+
+            &::placeholder {
+              color: #a0aec0;
+            }
+          }
+        }
+      }
+
+      &.text li {
+        width: 15rem;
+
+        textarea {
+          height: 7rem;
+        }
+      }
+    }
+
+    button.convert {
+      background-color: #31c48d;
+      color: #202124;
+      font-weight: 600;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+        Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+        Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 1rem;
+      padding: 0.5rem 0.7rem;
+      border-radius: 0.3rem;
+      border: 0;
+      margin: 0.5rem 0.7rem 0.5rem auto;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  ul {
+    li {
+      width: 7rem !important;
+    }
+
+    &.text li {
+      width: 10.5rem !important;
+    }
+  }
+}
